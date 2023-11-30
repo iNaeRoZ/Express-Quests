@@ -19,4 +19,5 @@ app.post("/api/movies", movieControllers.postMovie);
 app.post("/api/users", userControllers.postUsers);
 const port = process.env.APP_PORT;
 
+app.put("/api/movies/:id", movieControllers.updateMovie);
 module.exports = app;
