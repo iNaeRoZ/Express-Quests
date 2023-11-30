@@ -20,4 +20,8 @@ app.post("/api/users", userControllers.postUsers);
 const port = process.env.APP_PORT;
 
 app.put("/api/movies/:id", movieControllers.updateMovie);
+app.put("/api/users/:id", userControllers.updateUser);
+
+app.delete("/api/movies/:id", movieControllers.deleteMovie);
+app.delete("/api/users/:id", userControllers.deleteUser);
 module.exports = app;
